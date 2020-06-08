@@ -3,69 +3,144 @@
 <head>
     
     <meta charset="UTF-8">
+
     <link rel="stylesheet" type="text/css" href="styles/form.css" >
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Chamados</title>
 </head>
 <body>
     <div class="content">
+        
         <div class="box">
+            
             <div class="inside-box">
-            <form>
-                <div class="form-group">
-                  <label for="name">Nome</label>
-                  <input type="text" class="form-control" id="name" placeholder="Digite seu nome">
-                </div>
-                <div class="form-group">
-                  <label for="empresa">Empresa</label>
-                  <select class="select" id="empresa">
-                    <option>Empresa</option>
-                    <option></option>
-                    <option></option>
-                    <option></option>
-                    <option></option>
-                  </select>
-                </div>
+            
+                <form>
+                    <div class="margem">
+                    
+                        <div class="form-group">
+                            
+                        
+                  
+                            <label for="name">Nome:</label>
+                  
+                            <input type="text" class="nome-empresa" id="name" placeholder="Digite seu nome">
+                        
+                        
+                       
+                    </div>
+               
+                    </div>
+                
+                    <div class="margem">
+                    
+                        <div class="form-group">
+                    
+                            <label for="empresa">Empresa</label>
+                    
+                            <select class="nome-empresa" id="empresa">
+                        
+                                <option>Selecione</option>
+                        
+                                <option></option>
+                        
+                                <option></option>
+                        
+                                <option></option>
+                       
+                       
+                                <option></option>
+                   
+                            </select>
+                  
+                        </div>
+               
+                    </div>
                
                  <!--Para colocar flex setor e assunto-->
-                    <div class="controller">
+                    
+                 <div class="controller">
+                        
+                    <div class="margem">
+                       
                         <div class="form-flex">
-                        <label for="select">Setor</label>
-                        <select class="form-control" id="setor">
-                          <option>Setor</option>
+                     
+                            <label for="select">Setor</label>
+                       
+                            <select class="setor-assunto" id="setor">
+                          <option>Selecione</option>
                           <option></option>
                           <option></option>
                           <option></option>
                           <option></option>
+                      
+                      
+                        
                         </select>
+                    
                     </div>
-                        <div class="form-flex">
-                            <label for="select">Assunto</label>
-                            <select class="form-control" id="assunto">
-                              <option>Assunto</option>
-                              <option></option>
-                              <option></option>
-                              <option></option>
-                              <option></option>
-                            </select>
-                          </div>
-                      </div>
-                 
-                <div class="form-group">
-                  <label for="text-area">Ocorrencia: </label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Digite sua mensagem</textarea>
+                   
                 </div>
-                <div class="form-group">
-                    <label for="text-area">Sugestão: </label>
-                    <textarea class="form-control" id="Ocorrencia" rows="3">Digite sua mensagem</textarea>
-                  </div>
+                <div class="margem">
+                    <div class="form-flex">
+                     
+                            <label for="select">Assunto</label>
+                     
+                            <select class="setor-assunto" id="assunto">
+                     
+                                <option>Selecione</option>
+                     
+                                <option></option>
+                    
+                                <option></option>
+                    
+                                <option></option>
+                      
+                                <option></option>
+                    
+                            </select>
+                        </div>
+                        </div>
+                  
+                    </div>
+                 
+            
+                 
+               
+                    <div class="margem">
+                    <div class="form-group">
+                  
+                        <label for="text-area">Ocorrencia: </label>
+                 
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Digite sua mensagem: </textarea>
                 
-                    <button type="submit">Enviar</button>
+                    </div>
+                </div>
+                    <div class="margem">
+                    <div class="form-group">
+                  
+                        <label for="text-area">Sugestão: </label>
+                   
+                        <textarea class="form-control" id="Ocorrencia" rows="3">Digite sua mensagem</textarea>
+                 
+                    </div>
+                    </div>
+                    <div class="margem">
+                  
+                  
+                        <button type="submit">Enviar</button>
                 
-              </form>
+                    </div>
+            
+                </form>
+         
+            </div>
+       
         </div>
-        </div>
+    
     </div>
+
 </body>
 </html>

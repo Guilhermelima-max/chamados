@@ -14,30 +14,27 @@ body {
    }
    
    
-    .box {
-      width: 70vw;
+    .box { 
+      width: 40vw;
        height: 40vw;
        background:#B33773;
        border-radius: 10px;
     }
    
-    .controller{
-        display: flex;
-        display: inline;
-    }
-    .inside-box{
+ 
+    .inside-box{ 
         
         display: flex;
     justify-content: center;
     margin-top: 10vw;
     
     }
-form{
+form{ 
     padding: 20px 20px 20px 20px;
     width: 400px;
     height: 200px;
 }
-.controller{
+.controller{ /* usei para deixar o assunto e setor bem aninhados dentro do form*/
     
     display: flex;
     align-items: center;
@@ -45,17 +42,40 @@ form{
     
 }
 
-.form-group{
+.form-group{ /*deixar o bagui ajeiado dentro do form*/
     display: grid ;
+    
+    
 }
-.form-flex{
+.form-flex{ /* para formatar o campo setor e assunto*/
     display: grid;
     width: 180px;
+    
+    
 }
 
-button{
+button{ /*para formatar o botão*/
     background-color: #FED966;
-    margin-top: 10px;
+    
     border-radius: 10px;
 
+}
+label{ /* para formatar a fonte*/
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+
+}
+.tamanho-input{
+    height: 25px;
+    
+}
+.margem{ /*colocar margem dentro de cada conteudo*/
+    margin-top: 20px;
+}
+
+.nome-empresa{
+    height: 30px;
+}
+.setor-assunto{
+    height: 25px;
 }
