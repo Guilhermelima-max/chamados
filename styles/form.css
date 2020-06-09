@@ -87,13 +87,16 @@ label{ /* para formatar a fonte*/
 .nome-empresa{
     height: 30px;
     outline: none;
+    color: #acaaa8;
 }
 .setor-assunto{
     height: 25px;
     outline: none;
+    color: #acaaa8;
 }
 .sugestao-ocorre{
     height: 100px;
     border: none;
     outline: none;
+    color: #acaaa8;
 }
