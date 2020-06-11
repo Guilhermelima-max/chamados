@@ -11,7 +11,7 @@
 		
 		<div id="all">
 
-			<a href="chamado.html">
+			<a href="chamado.php">
 				<div class="box1 box">
 
 					<p class="light">Abrir chamado</p>
@@ -21,7 +21,7 @@
 
 			<div id="space"></div>
 
-			<a href="ver_chamado.html">
+			<a href="ver_chamado.php">
 				<div class="box1 box">
 
 					<p class="light">Ver chamado</p>
