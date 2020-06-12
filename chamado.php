@@ -5,7 +5,7 @@
     	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
     	<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
 		<title>OSLEC</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="public/css/style.css">
 	</head>
 	<body>
 
@@ -26,6 +26,13 @@
 				        	<br>
 				          	<input type="text" required id="nome" maxlength="45" placeholder="Digite seu nome">
 						</div>
+
+						<div>
+							<label class="light" for="cpf">CPF:</label>
+				        	<br>
+				          	<input type="number" required id="cpf" maxlength="45" placeholder="Digite seu cpf">
+						</div>
+
 						<div>
 							<label class="light" for="empresa">Empresa:</label>
 				        	<br>
