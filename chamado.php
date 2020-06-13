@@ -12,7 +12,7 @@ $con=mysqli_query($conn,$consulta)or die('Query failed: ' . mysqli_error($conn))
     	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
     	<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
 		<title>OSLEC</title>
-		<link rel="stylesheet" type="text/css" href="public/css/style.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
 
@@ -37,7 +37,7 @@ $con=mysqli_query($conn,$consulta)or die('Query failed: ' . mysqli_error($conn))
 						<div>
 							<label class="light" for="CPF">CPF:</label>
 				      <br>
-				      <input type="text" name="CPF"required id="cpf" maxlength="11" placeholder="Digite seu cpf">
+				      <input type="text" name="CPF"required id="cpf" minlength="11"maxlength="11" placeholder="Digite seu cpf">
 						</div>
 						<div id="empresa">
 							<div>
@@ -49,35 +49,19 @@ $con=mysqli_query($conn,$consulta)or die('Query failed: ' . mysqli_error($conn))
 										<?php } ?>
 							    </select>
 							</div>
-				          	<div>
-						<div id="setor_assunto">
-							<div>
-								<label class="light" for="setor">Departamento:</label>
-								<br>
-							    <select name="departamento" id="departamento" required>
-							
-							    </select>
-							</div>
-				          	<div>
-								<label class="light" for="assunto">Assunto:</label>
-								<br>
-							    <select name="assunto" id="assunto" required>
-							    	<option class="dark" value="" selected>Selecione</option>
-								    <option class="dark" value="duvida">Dúvida</option>
-								    <option class="dark" value="reclamacao">Reclamação</option>
-								    <option class="dark" value="outros">Outros</option>
-							    </select>
-							</div>
 						</div>
+						<label class="light" for="assunto">Assunto:</label>
+				      <br>
+				      <input type="text" required id="assunto" name="assunto"maxlength="100" placeholder="Digite o assunto">
 						<div>
 			          		<label class="light" for="ocorrencia">Ocorrência:</label>
 				          	<br>
-				          	<textarea id="ocorrencia" name="ocorrencia" required maxlength="200" placeholder="Digite sua mensagem"></textarea>
+				          	<textarea id="ocorrencia" name="ocorrencia" required maxlength="1000" placeholder="Digite sua mensagem"></textarea>
 			          	</div>
 						<div>
 			          		<label class="light" for="sugestao">Sugestão:</label>
 				          	<br>
-				          	<textarea id="sugestao" name="sugestao" maxlength="100" placeholder="Digite sua mensagem"></textarea>
+				          	<textarea id="sugestao" name="sugestao" maxlength="1000" placeholder="Digite sua mensagem"></textarea>
 			          	</div>
 			          	<div>
 			          		<button class="dark" type="submit"value="Enviar"name="enviar" >Enviar</button>
