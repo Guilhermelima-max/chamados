@@ -1,3 +1,15 @@
+.navbar{
+  background-color: #b33772;
+  color: white;
+  height: 50px;
+  margin-bottom: 80px;
+}
+.menu{
+  font-size: 20!important;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%)
+}
 * {
 	margin: 0px;
 	padding: 0px;
@@ -36,32 +48,14 @@ body {
 	background-color: #B33772;
 }
 
-.box1 {
-	display: flex;
-    justify-content: center;
-    align-items: center;
-	width: 350px;
-	height: 250px;
-	border-radius: 60px;
-}
+
 
 #box2 {
 	width: 600px;
-	height: 600px;
+	height: 580px;
 	border-radius: 20px;
-	padding: 30px 40px;
-}
-
-.box3 {
-	width: 700px;
-	height: auto;
-	border-radius: 10px;
-	padding: 20px;
-	margin-top: 20px;
-}
-
-#space {
-	width: 100px;
+  padding: 30px 40px;
+  margin-bottom: 20px;
 }
 
 .light,
@@ -89,20 +83,11 @@ body {
 	font-size: 1.5em;
 	text-align: center;
 	font-weight: bold;
-	margin-bottom: 20px;
-}
-
-.box1 p {
-	font-size: 2.3em;
-	font-weight: lighter;
-}
-
-.box1:hover {
-	background-color: #962E60;
+	margin-bottom: 1px;
 }
 
 label {
-	margin-bottom: 5px;
+	margin-left: 0px;
 }
 
 input,
@@ -111,8 +96,8 @@ textarea {
 	width: 520px;
 	height: 27px;
 	padding: 0 10px 0 10px;
-	margin-bottom: 15px;
-	margin-top: 2px;
+	margin-bottom: 10px;
+	margin-top: 1px;
 }
 
 #setor_assunto {
@@ -127,7 +112,7 @@ select {
 
 textarea {
 	height: 80px;
-	padding-top: 3px;
+	padding-top: 2px;
 	resize: none;
 }
 
@@ -159,17 +144,22 @@ button {
 	float: right;
 }
 
-button.concluir {
-	width: 90px;
-	height: 35px;
-}
 
 button.voltar {
 	position: absolute;
-	margin: 20px 0 0 20px;
-	float: left;
+	margin: -122px 0 0 20px;
+  float: left;
+  width: 90px;
+  height: 35px;
 }
-
+button.enviar{
+  position: absolute;
+  margin-left:60%;
+  margin-top: -30px;
+  float: left;
+  width: 90px;
+  height: 35px;
+}
 button:hover {
 	background-color: #FFE699;
 }

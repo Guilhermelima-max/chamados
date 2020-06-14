@@ -1,5 +1,5 @@
 <?php
-include "_script/config.php";
+include "../_script/config.php";
 $consulta="SELECT * FROM tbl_empresa";
 $con=mysqli_query($conn,$consulta)or die('Query failed: ' . mysqli_error($conn));
 
@@ -10,13 +10,17 @@ $con=mysqli_query($conn,$consulta)or die('Query failed: ' . mysqli_error($conn))
   	<head>
     	<meta charset="UTF-8" />
     	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    	<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+			<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<title>OSLEC</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="../styles/chamado_css.css">
 	</head>
 	<body>
-
-		<a href="index.php">
+	<nav class="navbar">	
+          <a class="menu">Cadastrar Chamado</span></a>
+    </nav>
+		<a href="../index.php">
 			<button class="voltar">Voltar</button>
 		</a>
 		
@@ -26,7 +30,7 @@ $con=mysqli_query($conn,$consulta)or die('Query failed: ' . mysqli_error($conn))
 
 				<p class="light">Chamado</p>
 
-				<form id="main_content" action="_script/caduser.php" method="post">
+				<form id="main_content" action="../_script/caduser.php" method="post">
 					<div id="form_part1">
 			        <div>
 							<label class="light" for="nome">Nome:</label>
@@ -64,7 +68,7 @@ $con=mysqli_query($conn,$consulta)or die('Query failed: ' . mysqli_error($conn))
 				          	<textarea id="sugestao" name="sugestao" maxlength="1000" placeholder="Digite sua mensagem"></textarea>
 			          	</div>
 			          	<div>
-			          		<button class="dark" type="submit"value="Enviar"name="enviar" >Enviar</button>
+			          		<button class="enviar" type="submit"value="Enviar"name="enviar" >Enviar</button>
 			          	</div>
 					</div>
 

@@ -1,3 +1,15 @@
+.navbar{
+  background-color: #b33772;
+  color: white;
+  height: 50px;
+}
+.menu{
+  font-size: 20!important;
+  position: absolute;
+  left: 50%;
+  margin-top: 15px;
+  transform: translateX(-50%)
+}
 * {
 	margin: 0px;
 	padding: 0px;
@@ -36,33 +48,15 @@ body {
 	background-color: #B33772;
 }
 
-.box1 {
-	display: flex;
-    justify-content: center;
-    align-items: center;
-	width: 350px;
-	height: 250px;
-	border-radius: 60px;
-}
-
-#box2 {
-	width: 600px;
-	height: 600px;
-	border-radius: 20px;
-	padding: 30px 40px;
-}
-
 .box3 {
 	width: 700px;
 	height: auto;
 	border-radius: 10px;
 	padding: 20px;
-	margin-top: 20px;
+  margin-bottom: 40px;
 }
 
-#space {
-	width: 100px;
-}
+
 
 .light,
 .dark {
@@ -70,7 +64,8 @@ body {
 }
 
 .light {
-	color: white;
+  color: white;
+  font-size: 13px !important;
 }
 
 .dark {
@@ -78,53 +73,20 @@ body {
 }
 
 .dados {
-	font-size: 1.1em;
+  font-size: 1.1em;
 }
 
 .ocorrencia {
-	font-weight: lighter;
-}
-
-#box2 p {
-	font-size: 1.5em;
-	text-align: center;
-	font-weight: bold;
-	margin-bottom: 20px;
-}
-
-.box1 p {
-	font-size: 2.3em;
-	font-weight: lighter;
-}
-
-.box1:hover {
-	background-color: #962E60;
+  font-weight: lighter;
+  margin-left: 20px;
+  margin-bottom: 4px;
+  margin-top: 4px;
 }
 
 label {
-	margin-left: 0px;
+  margin-left: 0px;
+  font-size: 16px !important;
 }
-
-input,
-select,
-textarea {
-	width: 520px;
-	height: 27px;
-	padding: 0 10px 0 10px;
-	margin-bottom: 15px;
-	margin-top: 2px;
-}
-
-#setor_assunto {
-	display: flex;
-	flex-direction: row;
-}
-
-select {
-	width: 240px;
-	margin: 2px 40px 15px 0;
-}
-
 textarea {
 	height: 80px;
 	padding-top: 3px;
@@ -139,16 +101,6 @@ button {
 	font-weight: bold;
 	color: #181818;
 }
-
-form input::-webkit-input-placeholder,
-form select option::-webkit-input-placeholder,
-form textarea::-webkit-input-placeholder {
-    color: #BEBEBE;
-    font-size: 0.9em;
-    font-weight: bolder;
-    padding-top: 2px;
-}
-
 button {
 	background-color: #FFD966;
 	font-size: 1.3em;
@@ -158,16 +110,12 @@ button {
 	border-radius: 90px;
 	float: right;
 }
-
-button.concluir {
-	width: 90px;
-	height: 35px;
-}
-
 button.voltar {
 	position: absolute;
-	margin: 20px 0 0 20px;
-	float: left;
+	margin: -42px 0 0 20px;
+  float: left;
+  width: 90px;
+  height: 35px;
 }
 
 button:hover {
