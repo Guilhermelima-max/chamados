@@ -124,3 +124,10 @@ button:hover {
 .new{
 	color: white;
 }
+.deletar {
+	position: absolute;
+	margin: -42px 0 0 20px;
+  float: left;
+  width: 90px;
+	height: 35px;
+}

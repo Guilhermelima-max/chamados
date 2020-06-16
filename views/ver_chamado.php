@@ -40,6 +40,12 @@ $con2=mysqli_query($conn,$consulta2)or die('Query failed: ' . mysqli_error($conn
 							
 					?>
 				<div class="box3 box">
+				<form action="../_script/funcao_btf.php" method="post" >
+				
+				<button name="id"type="submit" value="<?php echo $linha['id_ocorrencia'];?>" class="delete">Deletar</button>
+				</form>
+ 
+			
 			
 				<label class="dados">Funcionário:</label>
 				<p class="light ocorrencia"><?php echo $linha2['nome'];?></p>
@@ -59,9 +65,16 @@ $con2=mysqli_query($conn,$consulta2)or die('Query failed: ' . mysqli_error($conn
 <?php						
 
 							}while($linha2 = mysqli_fetch_assoc($con2) and $linha=mysqli_fetch_assoc($con));
-									}
+									}else{
+										?>
+											<div class="box3 box">
+												<label class="dados">Nenhuma Ocorrência foi registrada</label>
+												
+											
+												</div>
+									<?php } ?>
 					
-?>
+
 				<?php } ?>
 				<?php } ?>
 			
